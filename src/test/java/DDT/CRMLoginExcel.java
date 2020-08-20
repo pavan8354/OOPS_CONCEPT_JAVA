@@ -38,7 +38,8 @@ public class CRMLoginExcel {
 	
 	@AfterMethod	
 	public void teardown() {		
-		driver.quit();	
+		driver.quit();
+		driver.close();
 	}
 	@DataProvider(name="TestData")	
 	public Object[][] passdata(){
